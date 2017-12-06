@@ -1,0 +1,35 @@
+@SpringBootApplication ---> @Configuration + @EnableAutoConfiguration + @ComponentScan.
+
+@EnableAutoConfiguration - make Spring guess the configuration based on the classpath.
+
+@ComponentScan - make Spring scan the package for the @Configuration classes
+
+@Configuration - mark a class as a source of bean definitions
+
+@Bean - indicates that a method produces a bean to be managed by the Spring container.
+
+@Component - turns the class into a Spring bean at the auto-scan time.
+
+@Service - specialization of the @Component, has no encapsulated state.
+
+@Autowired - Spring’s dependency injection wires an appropriate bean into the marked class member.
+
+@Lazy - makes @Bean or @Component be initialized on demand rather than eagerly.
+
+@Controller - marks the class as web controller, capable of handling the requests.
+
+@ResponseBody - makes Spring bind method’s return value to the web response body.
+
+@RequestMapping - specify on the method in the controller, to map a HTTP request to the URL to this method.
+
+@RequestParam - bind HTTP parameters into method arguments.
+
+@PathVariable - binds placeholder from the URI to the method parameter.
+
+@Lazy - makes @Bean or @Component be initialized on demand rather than eagerly.
+
+@Qualifier - filters what beans should be used to @Autowire a field or parameter.
+
+@Value - indicates a default value expression for the field or parameter, typically something like “#{systemProperties.myProp}”
+
+@Required - fail the configuration, if the dependency cannot be injected
