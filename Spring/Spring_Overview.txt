@@ -1,0 +1,55 @@
+Web:
+---
+WebServices:
+Websocket:
+Jersy:
+Apache CXF:
+Rest Repositories:
+HATEOAS:
+
+
+Core:
+----
+Security
+Aspects
+JTA
+Cache
+Session
+
+Template:
+---------
+Freemarker
+
+SQl:
+----
+JPA
+JDBC
+H2
+HSQLDB
+Apache Derby
+MySql
+PostgreSQL
+SQLServer
+
+NoSQL
+-----
+MongoDB
+Cassandra
+Elasticsearch
+
+I/O
+---
+Batch
+Integration
+Quartz
+Camel
+JMS
+Kafka
+mail
+ldap
+
+Cloud AWS
+---------
+AWS Core
+AWS JDBC
+AWS Messaging
