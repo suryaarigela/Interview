@@ -8,5 +8,3 @@ Visible to the world (public).
 Visible to the package and all subclasses (protected).
 
 PUBLIC  ---> PROTECTED ---> DEFAULT ---> PRIVATE
-
-Added by Anjan
