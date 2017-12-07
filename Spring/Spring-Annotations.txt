@@ -33,3 +33,16 @@
 @Value - indicates a default value expression for the field or parameter, typically something like “#{systemProperties.myProp}”
 
 @Required - fail the configuration, if the dependency cannot be injected
+
+
+Specifically, @GetMapping is a composed annotation that acts as a shortcut for @RequestMapping(method = RequestMethod.GET).
+
+Spring 4.3 introduced new annotations which serve the same purpose as @RequestMapping having predefined 'method' (HTTP verb) value. Those annotations are actually themselves meta-annotated with @RequestMapping with the related value of 'method' element.
+
+Followings are those annotations:
+
+@GetMapping
+@PostMapping
+@PutMapping
+@DeleteMapping
+@PatchMapping

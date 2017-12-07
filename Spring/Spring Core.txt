@@ -1,1 +1,10 @@
 Spring Core
+-----------
+Scopes:
+======
+Singleton[Default]:One one instance per container. And its not Thread safe
+Prototype:Any Number of Object instances
+ Following three Scopes valid in Web Aware Spring application Context
+Request:THis Scopes Bean definition to an Http Request
+Session:This Scopes BEan definition to an Http Session
+Global Session: This Scopes Bean definition to an Global Http Session
