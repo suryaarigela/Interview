@@ -45,3 +45,5 @@
 	@Autowired(required=false)
 	@Qualifier("anotherColor")
 	private Color color;
+
+7)To Read Annotations we need to declare <context:annotation-config /> in application-contest file.
