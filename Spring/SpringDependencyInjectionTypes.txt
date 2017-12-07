@@ -1,0 +1,47 @@
+1) Setting using property reference.
+
+ Ex: <bean id="cat" class="com.javacodegeeks.snippets.enterprise.Cat">
+		<property name="name" value="cat" />
+		<property name="color" ref="color" />
+    </bean>
+
+
+2) Autowire by name (setter and getter name)
+
+     <bean id="dog" class="com.javacodegeeks.snippets.enterprise.Dog" autowire="byName">
+		<property name="name" value="dog" />
+     </bean>	
+
+
+3) Autowire by constructor
+
+  Ex:<bean id="frog" class="com.javacodegeeks.snippets.enterprise.Frog" autowire="constructor">
+	<property name="name" value="frog" />
+    </bean>
+4) Annotations in java class
+
+	public class Tiger {
+
+	@Autowired
+	private Color color;
+	}
+
+5) Annotations with required (by default is true), if make it required=false spring won't throw any exception it didn't find any associated been.
+	
+	public class Tiger {
+	
+	private String name;
+
+	@Autowired(required=false)
+	private Color color;
+	}
+
+6) Annotations with Qualifier : if same class is two been declarations, if we specify qualifier name we can pick which ever been we want.
+
+	public class Tiger {
+	
+	private String name;
+
+	@Autowired(required=false)
+	@Qualifier("anotherColor")
+	private Color color;
